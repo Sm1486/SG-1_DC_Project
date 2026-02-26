@@ -31,12 +31,12 @@ splitfolders.ratio(input_folder, output=output_folder,
                    seed=42, ratio=(.8, .2), 
                    group_prefix=None, move=False)
 
-# edit paths, batch size, epochs etc here — nothing else should need changing
+# edit paths, batch size, epochs etc here 
 CFG = {
     "train_dir"  : "/kaggle/working/data_split/train",
     "test_dir"   : "/kaggle/working/data_split/val",
     "output_dir"      : "/kaggle/working/asl_output",
-    "num_classes"     : 36,        # 0-9 + A-Z, gets overridden from actual folder count anyway
+    "num_classes"     : 26,        #  A-Z, gets overridden from actual folder count anyway
     "img_size"        : 224,
     "dropout"         : 0.40,
     "epochs"          : 40,
