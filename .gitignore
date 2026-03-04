@@ -1,0 +1,24 @@
+# virtual environment
+asl_env/
+
+# model weights and task files
+*.pth
+*.task
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# output images
+cropped_hand.jpg
+
+# VS Code settings
+.vscode/
+
+# system files
+.DS_Store
+Thumbs.db
