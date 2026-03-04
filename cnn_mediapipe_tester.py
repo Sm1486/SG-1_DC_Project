@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 DEVICE = torch.device("cpu")   # local machine — no CUDA
 
 
-# ── CNN model ─────────────────────────────────────────────────────────────────
+#  CNN model 
 
 def build_transforms(img_size):
     return transforms.Compose([
@@ -77,7 +77,7 @@ class ASLPredictor:
         return self.class_map[idx], probs[idx].item()
 
 
-# ── MediaPipe hand detection ──────────────────────────────────────────────────
+# MediaPipe hand detection 
 
 # download the hand landmarker model if not already present
 MODEL_PATH = r"C:/Users/rishi/VS CODINGS/SG-1_DC_Project/hand_landmarker.task"
